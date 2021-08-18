@@ -3,27 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C9F568426CD2E0800CC9416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F568326CD2E0800CC9416 /* AppDelegate.swift */; };
 		2C9F568626CD2E0800CC9416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F568526CD2E0800CC9416 /* SceneDelegate.swift */; };
-		2C9F568826CD2E0800CC9416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F568726CD2E0800CC9416 /* ViewController.swift */; };
+		2C9F568826CD2E0800CC9416 /* NotesTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F568726CD2E0800CC9416 /* NotesTableController.swift */; };
 		2C9F568B26CD2E0800CC9416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9F568926CD2E0800CC9416 /* Main.storyboard */; };
 		2C9F568D26CD2E0B00CC9416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9F568C26CD2E0B00CC9416 /* Assets.xcassets */; };
 		2C9F569026CD2E0B00CC9416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9F568E26CD2E0B00CC9416 /* LaunchScreen.storyboard */; };
+		2C9F569C26CD2F0A00CC9416 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F569B26CD2F0A00CC9416 /* NoteDetailViewController.swift */; };
+		2C9F569E26CD2F1A00CC9416 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F569D26CD2F1A00CC9416 /* NoteDetailView.swift */; };
+		2C9F56A026CD305D00CC9416 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F569F26CD305D00CC9416 /* NoteCell.swift */; };
+		2C9F56A226CD314C00CC9416 /* NotesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F56A126CD314C00CC9416 /* NotesTableView.swift */; };
+		2C9F56A526CD31E400CC9416 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C9F56A426CD31E400CC9416 /* SnapKit */; };
+		2C9F56A726CD356600CC9416 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F56A626CD356600CC9416 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C9F568026CD2E0800CC9416 /* Challenge - Notes appliaction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge - Notes appliaction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9F568326CD2E0800CC9416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C9F568526CD2E0800CC9416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C9F568726CD2E0800CC9416 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C9F568726CD2E0800CC9416 /* NotesTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableController.swift; sourceTree = "<group>"; };
 		2C9F568A26CD2E0800CC9416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C9F568C26CD2E0B00CC9416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C9F568F26CD2E0B00CC9416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C9F569126CD2E0B00CC9416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9F569B26CD2F0A00CC9416 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		2C9F569D26CD2F1A00CC9416 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		2C9F569F26CD305D00CC9416 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		2C9F56A126CD314C00CC9416 /* NotesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableView.swift; sourceTree = "<group>"; };
+		2C9F56A626CD356600CC9416 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9F56A526CD31E400CC9416 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,52 @@
 		2C9F568226CD2E0800CC9416 /* Challenge - Notes appliaction */ = {
 			isa = PBXGroup;
 			children = (
+				2C9F569926CD2E4500CC9416 /* NotesPreview */,
+				2C9F569826CD2E3300CC9416 /* NoteScreen */,
+				2C9F569726CD2E2900CC9416 /* Models */,
 				2C9F568326CD2E0800CC9416 /* AppDelegate.swift */,
 				2C9F568526CD2E0800CC9416 /* SceneDelegate.swift */,
-				2C9F568726CD2E0800CC9416 /* ViewController.swift */,
-				2C9F568926CD2E0800CC9416 /* Main.storyboard */,
 				2C9F568C26CD2E0B00CC9416 /* Assets.xcassets */,
 				2C9F568E26CD2E0B00CC9416 /* LaunchScreen.storyboard */,
 				2C9F569126CD2E0B00CC9416 /* Info.plist */,
 			);
 			path = "Challenge - Notes appliaction";
+			sourceTree = "<group>";
+		};
+		2C9F569726CD2E2900CC9416 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C9F56A626CD356600CC9416 /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C9F569826CD2E3300CC9416 /* NoteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2C9F569B26CD2F0A00CC9416 /* NoteDetailViewController.swift */,
+				2C9F569D26CD2F1A00CC9416 /* NoteDetailView.swift */,
+			);
+			path = NoteScreen;
+			sourceTree = "<group>";
+		};
+		2C9F569926CD2E4500CC9416 /* NotesPreview */ = {
+			isa = PBXGroup;
+			children = (
+				2C9F568926CD2E0800CC9416 /* Main.storyboard */,
+				2C9F568726CD2E0800CC9416 /* NotesTableController.swift */,
+				2C9F56A126CD314C00CC9416 /* NotesTableView.swift */,
+				2C9F569A26CD2E5000CC9416 /* Cell */,
+			);
+			path = NotesPreview;
+			sourceTree = "<group>";
+		};
+		2C9F569A26CD2E5000CC9416 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C9F569F26CD305D00CC9416 /* NoteCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +132,9 @@
 			dependencies = (
 			);
 			name = "Challenge - Notes appliaction";
+			packageProductDependencies = (
+				2C9F56A426CD31E400CC9416 /* SnapKit */,
+			);
 			productName = "Challenge - Notes appliaction";
 			productReference = 2C9F568026CD2E0800CC9416 /* Challenge - Notes appliaction.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 2C9F567726CD2E0800CC9416;
+			packageReferences = (
+				2C9F56A326CD31E400CC9416 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 2C9F568126CD2E0800CC9416 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9F568826CD2E0800CC9416 /* ViewController.swift in Sources */,
+				2C9F568826CD2E0800CC9416 /* NotesTableController.swift in Sources */,
+				2C9F569E26CD2F1A00CC9416 /* NoteDetailView.swift in Sources */,
+				2C9F569C26CD2F0A00CC9416 /* NoteDetailViewController.swift in Sources */,
+				2C9F56A726CD356600CC9416 /* Note.swift in Sources */,
+				2C9F56A026CD305D00CC9416 /* NoteCell.swift in Sources */,
 				2C9F568426CD2E0800CC9416 /* AppDelegate.swift in Sources */,
 				2C9F568626CD2E0800CC9416 /* SceneDelegate.swift in Sources */,
+				2C9F56A226CD314C00CC9416 /* NotesTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C9F56A326CD31E400CC9416 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C9F56A426CD31E400CC9416 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C9F56A326CD31E400CC9416 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C9F567826CD2E0800CC9416 /* Project object */;
 }
